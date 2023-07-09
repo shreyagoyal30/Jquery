@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Todo List </title>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+     <script src="index.js"></script>
+   
+
+</head>
+<body>
+    <form id="form1">
+        <main class="main" id="top">
+            <div class="container-fluid" >
+             
+                <div class="content p-0">
+                    <!-- Content area -->
+                  
+                    <div class="row g-3 mb-3">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="/settings/dashboard">Settings</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Manage External Drive</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-12" id="new">
+                            <h5>You have 2 drives of total 250 GB</h5>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" data-key="abcdefghijklmn">
+                                <div class="bg-holder bg-card" style="background-image:url(/assets/img/icons/spot-illustrations/corner-3.png);"></div>
+                                <div class="card-body position-relative">
+                                    <h4 class="mb-3"><span class="drive-name">150 GB</span> <a data-bs-toggle="tooltip" data-bs-placement="top" title="Edit drive name" href="javascript:void(0)" class="btn btn-falcon-default btn-sm _btnEditDriveName" data-name="150 GB" data-size="150GB"><i class="fas fa-pencil-alt fs--1"></i></a> <span class="badge badge-soft-primary fs--2 float-end">Shared</span></h4>
+                                    <p class="mb-0">60.34 GB used of 150 GB btn</p>
+                                    <div class="progress mb-3" style="height:15px">
+                                      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div><a class="btn" href="Manage.aspx?drive=">Manage users</a> | <a href="storage.aspx?drive=">Manage storage</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card" data-key="opqrstuvwxyz">
+                                <div class="bg-holder bg-card" style="background-image:url(/assets/img/icons/spot-illustrations/corner-1.png);"></div>
+                                <div class="card-body position-relative">
+                                    <h4 class="mb-3"><span>100 GB</span> <a data-bs-toggle="tooltip" data-bs-placement="top" title="Edit drive name" href="javascript:void(0)" class="btn btn-falcon-default btn-sm _btnEditDriveName"  data-name="100 GB" data-size="100GB"><i class="fas fa-pencil-alt fs--1"></i></a> <span class="badge badge-soft-primary fs--2 float-end">Personal</span></h4>
+                                    <p class="mb-0">60.34 GB used of 100 GB</p>
+                                    <div class="progress mb-3" style="height:15px">
+                                      <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div><a href="manageusers.aspx?drive=">Manage user</a> | <a href="storage.aspx?drive=">Manage storage</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </main>
+    </form>
+
+   
+</body>
+</html>
